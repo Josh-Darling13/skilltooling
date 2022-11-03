@@ -8,6 +8,7 @@ const person = (props) =>{
         <div>
             <p>Some nonsense from a tutorial</p>
             <p>a person named {props.name} this is my number {props.age}</p>
+            <p>{props.children} &lt;~~ props.children</p>
             <p>Oh look a random number</p>
             <hr/>
         </div>
@@ -15,4 +16,4 @@ const person = (props) =>{
     )
 }
 
-export default person;
+export default person; 
