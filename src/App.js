@@ -30,9 +30,22 @@ const App = props => {
       <div className="App">
         <h1>bumping the button down</h1>
         <button onClick={switchNameHandler}>REMEMBER TO PAY YOUR BILLS</button>
-        <Person name={personState.persons[0].name} age={personState.persons[0].age} />
-        <Person name={personState.persons[1].name} age={personState.persons[1].age}>Some text for example stuff </Person>
-        <Person name={personState.persons[2].name} age={personState.persons[2].age}> Probably Rotten</Person>
+        
+        <Person 
+        name={personState.persons[0].name}
+        age={personState.persons[0].age} />
+        
+        <Person
+        name={personState.persons[1].name}
+        age={personState.persons[1].age}
+        tagClick={this.switchNameHandler}
+        >
+          Some text for example stuff </Person>
+        
+        <Person
+        name={personState.persons[2].name}
+        age={personState.persons[2].age}>
+          Probably Rotten</Person>
       </div>
     );
 }
