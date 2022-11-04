@@ -12,7 +12,6 @@ const person = (props) =>{
             <p>Oh look a random number</p>
             <hr/>
         </div>
-
     )
 }
 
