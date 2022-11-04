@@ -7,7 +7,7 @@ const person = (props) =>{
     return (
         <div>
             <p>Some nonsense from a tutorial</p>
-            <p onClick={props.tagClick}>a person named {props.name} this is my number {props.age}</p>
+            <p onClick={props.tagclick}>a person named {props.name} this is my number {props.age}</p>
             <p>{props.children} &lt;~~ props.children</p>
             <p>Oh look a random number</p>
             <hr/>
