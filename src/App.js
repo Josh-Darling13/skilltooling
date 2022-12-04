@@ -2,6 +2,9 @@ import React, {Component, useState} from 'react';
 import './App.css';
 import Person from './Person';
 
+/*
+Basic react program for the use of keeping skills sharp
+*/
 
 
 
