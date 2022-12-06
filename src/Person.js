@@ -1,5 +1,10 @@
 import React from "react";
 
+
+/*
+Useage of props and state
+*/
+
 const person = (props) =>{
 
     let rando = Math.floor(Math.random()* 30);
