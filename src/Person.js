@@ -2,7 +2,9 @@ import React from "react";
 
 
 /*
-Useage of props and state
+Useage of props and state,
+state is controlled in the App.js
+file
 */
 
 const person = (props) =>{

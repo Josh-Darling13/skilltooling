@@ -4,6 +4,7 @@ import Person from './Person';
 
 /*
 Basic react program for the use of keeping skills sharp
+most of this is in the Person.js file
 */
 
 
