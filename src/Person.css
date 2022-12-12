@@ -12,4 +12,5 @@ file for styling Person.js
     padding: 1em;
     text-align: left;
     opacity: 75%;
+    line-height: .5em;
 }
