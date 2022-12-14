@@ -15,7 +15,7 @@ background-image: url("https://www.transparenttextures.com/patterns/brick-wall-d
   align-items: center;
 }
 
-input{
+.input{
   height: 1.5em;
   border:  1px solid blue;
   border-radius: 15px;

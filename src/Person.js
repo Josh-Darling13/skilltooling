@@ -18,6 +18,7 @@ const person = (props) =>{
             <p>{props.children} &lt;~~ props.children</p>
             <p>Oh look a random number</p>
             <input 
+            className="Input"
             type="text" 
             onChange={props.changed} 
             value={props.name}/>
