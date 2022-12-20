@@ -1,8 +1,7 @@
 
 body{
-  background-color: #62f500;
-background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(237,247,249,1) 100%);
 }
 
 .App {
