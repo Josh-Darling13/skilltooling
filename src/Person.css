@@ -3,11 +3,10 @@ file for styling Person.js
 */
 
 .Person{
+    color: #1c1c1c;
     width: 60%;
     margin: 5px;
     background-color: antiquewhite;
-    border:  3px double #000;
-    border-radius: 15px;
     padding-left: 25px;
     font-size:.8em;
     text-align: left;
