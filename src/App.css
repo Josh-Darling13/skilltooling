@@ -1,7 +1,10 @@
 
 body{
-  background: rgb(63,94,251);
-  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(237,247,249,1) 100%);
+  background:  #1c1c1c;
+}
+
+.h1{
+  color: darkorange;
 }
 
 .App {
