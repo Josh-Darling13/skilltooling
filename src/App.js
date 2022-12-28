@@ -63,22 +63,13 @@ class App extends Component {
 
     if (this.state.showPersons){
       persons = (
-        <div>
-        <Person
-          name={this.state.persons[0].name}
-          age={this.state.persons[0].age} />
-        <Person
-          name={this.state.persons[1].name}
-          age={this.state.persons[1].age}
-          tagclick={this.switchNameHandler.bind(this, 'Alexis')}
-          changed={this.nameChangeHandler}
-        >
-          Some text for example stuff </Person>
-          <Person
-            name={this.state.persons[2].name}
-            age={this.state.persons[2].age}>
-          Probably Rotten
-        </Person>
+      <div>
+          { this.state.persons.map( stuff => {
+              return <Person
+              name={stuff.name}
+              age={stuff.age} />
+              
+            })}
       </div>
       );
     }
@@ -91,13 +82,8 @@ class App extends Component {
         onClick={this.togglePersonsHandler}
         style={betterButton}
         >Hide Stuff</button>
-
       {persons}
-      
-
-
       </div>
-      
     );
   }
 }
