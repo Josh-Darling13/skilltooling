@@ -41,13 +41,28 @@ class App extends Component {
     })
    }
 
+   togglePersonsHandler = () =>{}
+
+
    render(){
+
+    const betterButton = {
+      color: "1c1c1c",
+      backgroundColor: 'antiquewhite',
+      border: '3px solid #04d4db',
+      borderRadius: "10px",
+      fontSize:".8em",
+      cursor: 'pointer'
+    }
 
     return (
 
       <div className="App">
         <h1>bumping the button down</h1>
-        <button onClick={()=> this.switchNameHandler('August')}>Hide Stuff</button>
+        <button 
+        onClick={this.togglePersonsHandler}
+        style={betterButton}
+        >Hide Stuff</button>
 
         <div>
           <Person

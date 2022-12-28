@@ -19,7 +19,7 @@ const person = (props) =>{
             <p>Oh look a random number</p>
             <input 
             className="Input"
-            type="text"
+            type="textarea"
             onChange={props.changed}
             value={props.name}/>
             <hr/>

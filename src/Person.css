@@ -4,15 +4,15 @@ file for styling Person.js
 
 .Person{
     color: #1c1c1c;
-    width: 60%;
+    width: 90%;
     margin: 5px;
     background-color: antiquewhite;
-    padding-left: 25px;
+    padding: 25px;
     font-size:.8em;
     text-align: left;
     opacity: 75%;
     line-height: .5em;
-}
+    }
 
 
 
