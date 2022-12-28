@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react';
+import React, {Component} from 'react';
 import './App.css';
 import Person from './Person';
 
@@ -6,8 +6,6 @@ import Person from './Person';
 Basic react program for the use of keeping skills sharp
 most of this is in the Person.js file
 */
-
-
 
 class App extends Component {
 
@@ -48,23 +46,26 @@ class App extends Component {
     return (
 
       <div className="App">
-        <h1>bumping the button down</h1><button onClick={()=> this.switchNameHandler('August')}>REMEMBER TO PAY YOUR BILLS</button>
-        <Person
-          name={this.state.persons[0].name}
-          age={this.state.persons[0].age} />
-          
-        <Person
-          name={this.state.persons[1].name}
-          age={this.state.persons[1].age}
-          tagclick={this.switchNameHandler.bind(this, 'Alexis')}
-          changed={this.nameChangeHandler}
-        >
-          Some text for example stuff </Person>
+        <h1>bumping the button down</h1>
+        <button onClick={()=> this.switchNameHandler('August')}>Hide Stuff</button>
+
+        <div>
           <Person
-            name={this.state.persons[2].name}
-            age={this.state.persons[2].age}>
-          Probably Rotten
-        </Person>
+            name={this.state.persons[0].name}
+            age={this.state.persons[0].age} />
+          <Person
+            name={this.state.persons[1].name}
+            age={this.state.persons[1].age}
+            tagclick={this.switchNameHandler.bind(this, 'Alexis')}
+            changed={this.nameChangeHandler}
+          >
+            Some text for example stuff </Person>
+            <Person
+              name={this.state.persons[2].name}
+              age={this.state.persons[2].age}>
+            Probably Rotten
+          </Person>
+        </div>
       </div>
       
     );
