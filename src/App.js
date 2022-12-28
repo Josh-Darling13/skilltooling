@@ -59,6 +59,30 @@ class App extends Component {
       cursor: 'pointer'
     }
 
+    let persons = null;
+
+    if (this.state.showPersons){
+      persons = (
+        <div>
+        <Person
+          name={this.state.persons[0].name}
+          age={this.state.persons[0].age} />
+        <Person
+          name={this.state.persons[1].name}
+          age={this.state.persons[1].age}
+          tagclick={this.switchNameHandler.bind(this, 'Alexis')}
+          changed={this.nameChangeHandler}
+        >
+          Some text for example stuff </Person>
+          <Person
+            name={this.state.persons[2].name}
+            age={this.state.persons[2].age}>
+          Probably Rotten
+        </Person>
+      </div>
+      );
+    }
+
     return (
 
       <div className="App">
@@ -68,27 +92,9 @@ class App extends Component {
         style={betterButton}
         >Hide Stuff</button>
 
-        {
-        this.state.showPersons ?
-          <div>
-            <Person
-              name={this.state.persons[0].name}
-              age={this.state.persons[0].age} />
-            <Person
-              name={this.state.persons[1].name}
-              age={this.state.persons[1].age}
-              tagclick={this.switchNameHandler.bind(this, 'Alexis')}
-              changed={this.nameChangeHandler}
-            >
-              Some text for example stuff </Person>
-              <Person
-                name={this.state.persons[2].name}
-                age={this.state.persons[2].age}>
-              Probably Rotten
-            </Person>
-          </div>
-        : null
-        }
+      {persons}
+      
+
 
       </div>
       
