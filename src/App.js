@@ -15,7 +15,8 @@ class App extends Component {
      {name: 'Steffi', age: 28},
      {name: 'Ginger', age: 22},
    ],
-    moreUseless: 'empty data'
+    moreUseless: 'empty data',
+    showPersons : false,
   }
 
   switchNameHandler = (newName) => {
@@ -26,7 +27,7 @@ class App extends Component {
        {name: 'Nancy', age: 21},
        {name: 'Bonnie', age: 19},
      ],
-     otherDate: 'no one cares',
+     otherDate: 'no one cares'
     })
    }
 
@@ -41,7 +42,10 @@ class App extends Component {
     })
    }
 
-   togglePersonsHandler = () =>{}
+   togglePersonsHandler = () =>{
+    const doesShow = this.state.showPersons;
+    this.setState({showPersons: !doesShow}); 
+   }
 
 
    render(){
@@ -64,23 +68,28 @@ class App extends Component {
         style={betterButton}
         >Hide Stuff</button>
 
-        <div>
-          <Person
-            name={this.state.persons[0].name}
-            age={this.state.persons[0].age} />
-          <Person
-            name={this.state.persons[1].name}
-            age={this.state.persons[1].age}
-            tagclick={this.switchNameHandler.bind(this, 'Alexis')}
-            changed={this.nameChangeHandler}
-          >
-            Some text for example stuff </Person>
+        {
+        this.state.showPersons ?
+          <div>
             <Person
-              name={this.state.persons[2].name}
-              age={this.state.persons[2].age}>
-            Probably Rotten
-          </Person>
-        </div>
+              name={this.state.persons[0].name}
+              age={this.state.persons[0].age} />
+            <Person
+              name={this.state.persons[1].name}
+              age={this.state.persons[1].age}
+              tagclick={this.switchNameHandler.bind(this, 'Alexis')}
+              changed={this.nameChangeHandler}
+            >
+              Some text for example stuff </Person>
+              <Person
+                name={this.state.persons[2].name}
+                age={this.state.persons[2].age}>
+              Probably Rotten
+            </Person>
+          </div>
+        : null
+        }
+
       </div>
       
     );
